@@ -1,19 +1,24 @@
 import { Card, CardDescription, CardTitle } from '@/components/ui/card'
 import Link from 'next/link'
+import './cards.css'
 
 export function MenuCard() {
   return (
-    <Link href={'/flashcards'}>
-      <Card className='p-4 flex flex-row flex-nowrap gap-6'>
-        <img
-          className='rounded-md max-w-xs max-h-[120px]'
-          src='https://images.unsplash.com/photo-1566232392379-afd9298e6a46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3BhbmlzaHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=900&q=60'
-        />
+    <Link
+      href={'/flashcards'}
+      className='flex-grow flex-shrink min-w-[580px] max-w-[50%]'
+    >
+      <Card className='p-4 flex flex-row flex-nowrap min-w-full gap-6 w-[580px] h-48 min-h-min'>
+        <div className='cardSlot'>
+          <div className='bottomCard' />
+          <div className='middleCard' />
+          <div className='topCard'>Todos los dias</div>
+        </div>
         <div>
           <CardTitle className='font-semibold text-lg'>
             Spanish Module 1 Vocab
           </CardTitle>
-          <CardDescription className='line-clamp-4'>
+          <CardDescription className='line-clamp-5'>
             Cillum adipisicing cupidatat dolor quis ad nisi. Do consectetur aute
             consequat esse nostrud dolor ullamco fugiat. Enim in cupidatat
             cupidatat do reprehenderit duis occaecat proident. Fugiat sint ipsum

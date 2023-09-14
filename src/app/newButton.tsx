@@ -17,6 +17,7 @@ import { DialogClose } from '@radix-ui/react-dialog'
 import { IconLoader, IconPlus } from '@tabler/icons-react'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
+import { Loader, Plus } from 'lucide-react'
 
 export function NewButton() {
   const formSchema = z.object({
@@ -42,7 +43,7 @@ export function NewButton() {
     <Dialog>
       <DialogTrigger asChild>
         <Button>
-          <IconPlus className='h-4 w-4' />
+          <Plus className='h-4 w-4' />
           New
         </Button>
       </DialogTrigger>
@@ -70,7 +71,7 @@ export function NewButton() {
         </Form>
         <DialogFooter>
           <Button type='submit' variant={'disabled'} disabled={true}>
-            <IconLoader className='w-4 h-4 animate-spin' /> Create
+            <Loader className='w-4 h-4 animate-spin' /> Create
           </Button>
           <DialogClose asChild>
             <Button type='reset' variant={'outline'}>

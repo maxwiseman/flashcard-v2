@@ -11,7 +11,10 @@ export default async function Page() {
         <NewButton />
       </div>
       <Separator className='my-6' />
-      <div className='flex gap-6'>
+      {/* ! This should really be using grid */}
+      <div className='flex flex-wrap gap-6 max-w-full'>
+        <MenuCard />
+        <MenuCard />
         <MenuCard />
         <MenuCard />
         <MenuCard />
