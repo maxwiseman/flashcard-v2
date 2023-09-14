@@ -32,6 +32,7 @@ export function NewButton() {
     resolver: zodResolver<any>(formSchema),
     defaultValues: {
       name: '',
+      description: '',
     },
   })
 
@@ -61,7 +62,7 @@ export function NewButton() {
             </Setting>
             <Setting
               form={form}
-              name='username'
+              name='description'
               label='Description'
               placeholder='Module 2 Day 1 Vocabulary'
             >
