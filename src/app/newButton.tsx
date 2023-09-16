@@ -14,10 +14,9 @@ import { Setting } from '@/components/ui/setting'
 import { Textarea } from '@/components/ui/textarea'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { DialogClose } from '@radix-ui/react-dialog'
-import { IconLoader, IconPlus } from '@tabler/icons-react'
+import { Loader, Plus } from 'lucide-react'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
-import { Loader, Plus } from 'lucide-react'
 
 export function NewButton() {
   const formSchema = z.object({

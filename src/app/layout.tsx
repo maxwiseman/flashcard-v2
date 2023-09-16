@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import NextAuthProvider from '@/lib/auth/Provider'
 import TrpcProvider from '@/lib/trpc/Provider'
 import { cn } from '@/lib/utils'
+import { ThemeProvider } from '@/components/ui/theme-provider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,7 +25,9 @@ export default function RootLayout({
       >
         <NextAuthProvider>
           <TrpcProvider>
-            <main className='p-8 w-screen h-full'>{children}</main>
+            <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+              <main className='p-8 w-screen h-full'>{children}</main>
+            </ThemeProvider>
           </TrpcProvider>
         </NextAuthProvider>
       </body>
