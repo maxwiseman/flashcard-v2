@@ -10,9 +10,13 @@
 
 .cardSlot * {
   border-radius: 4px;
-  background: #fff;
+  background: hsl(var(--card));
   box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
   position: absolute;
+}
+
+.dark .cardSlot * {
+  background: hsl(var(--secondary));
 }
 
 .bottomCard {
@@ -49,7 +53,7 @@
 }
 
 .topCard {
-  color: #000;
+  color: hsl(var(--primary));
   text-align: center;
 
   /* suble - semibold */

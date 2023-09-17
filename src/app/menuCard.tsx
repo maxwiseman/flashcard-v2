@@ -5,7 +5,7 @@ import './cards.css'
 export function MenuCard() {
   return (
     <Link
-      href={'/flashcards'}
+      href={'/cards/set/123'}
       className='flex-grow flex-shrink min-w-[580px] max-w-[50%]'
     >
       <Card className='p-4 flex flex-row flex-nowrap min-w-full gap-6 w-[580px] h-48 min-h-min'>
@@ -15,7 +15,7 @@ export function MenuCard() {
           <div className='topCard'>Todos los dias</div>
         </div>
         <div>
-          <CardTitle className='font-semibold text-lg'>
+          <CardTitle className='font-semibold text-lg bg-car'>
             Spanish Module 1 Vocab
           </CardTitle>
           <CardDescription className='line-clamp-5'>
