@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@auth/core':
-    specifier: ^0.14.0
-    version: 0.14.0
+    specifier: ^0.15.2
+    version: 0.15.2
   '@auth/drizzle-adapter':
     specifier: ^0.3.2
     version: 0.3.2
@@ -171,8 +171,8 @@ packages:
       preact-render-to-string: 5.2.3(preact@10.11.3)
     dev: false
 
-  /@auth/core@0.14.0:
-    resolution: {integrity: sha512-kZMwjFWDGxSI/e4+HO6KeTmuMFMWu6qIzgF1k87HbKdxNFis3K1PXz7md3fCB4+5ije93Uld1ZNUdlmB2rAHww==}
+  /@auth/core@0.15.2:
+    resolution: {integrity: sha512-z79WfH+7Hub/DP3bd5/oiymi6zqSkpeltG2u/vvZrLUXTz3LHWXEVtSxYIusHXpzLpEGfDwnACkiFB4izP1wEg==}
     peerDependencies:
       nodemailer: ^6.8.0
     peerDependenciesMeta:
