@@ -31,7 +31,7 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-toggle": "^1.0.3",
     "@radix-ui/react-toggle-group": "^1.0.4",
-    "@tabler/icons-react": "^2.34.0",
+    "@tabler/icons-react": "^2.40.0",
     "@tanstack/react-query": "^4.35.3",
     "@tiptap/extension-blockquote": "^2.1.12",
     "@tiptap/extension-color": "^2.1.10",
