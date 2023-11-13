@@ -1,4 +1,4 @@
-import { UseFormReturn } from 'react-hook-form'
+import { UseFormReturn } from "react-hook-form";
 import {
   FormControl,
   FormDescription,
@@ -6,9 +6,9 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from './form'
-import { Input } from './input'
-import { ReactElement, ReactNode, cloneElement } from 'react'
+} from "./form";
+import { Input } from "./input";
+import { ReactElement, ReactNode, cloneElement } from "react";
 
 export function Setting({
   form,
@@ -18,12 +18,12 @@ export function Setting({
   description,
   placeholder,
 }: {
-  form: UseFormReturn<any, any, undefined>
-  name: string
-  label?: string
-  children: ReactElement
-  description?: string
-  placeholder?: string
+  form: UseFormReturn<any, any, undefined>;
+  name: string;
+  label?: string;
+  children: ReactElement;
+  description?: string;
+  placeholder?: string;
 }) {
   return (
     <FormField
@@ -40,5 +40,5 @@ export function Setting({
         </FormItem>
       )}
     />
-  )
+  );
 }

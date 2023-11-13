@@ -1,10 +1,10 @@
-import { createInsertSchema, createSelectSchema } from 'drizzle-zod';
-import { z } from 'zod';
+import { createInsertSchema, createSelectSchema } from "drizzle-zod";
+import { z } from "zod";
 import { mysqlTable, serial, varchar, int } from "drizzle-orm/mysql-core";
 
 export const computers = mysqlTable("computers", {
   id: serial("id").primaryKey(),
-  brand: varchar("brand", {length: 256}).notNull(),
+  brand: varchar("brand", { length: 256 }).notNull(),
   cores: int("cores").notNull(),
 });
 // Schema for CRUD - used to validate API requests

@@ -12,7 +12,7 @@ export default function Page() {
     <>
       <TipTap />
       <ToggleGroup
-        onValueChange={value => {
+        onValueChange={(value) => {
           setTheme(value);
         }}
         variant="outline"
@@ -20,10 +20,10 @@ export default function Page() {
         className="mt-2"
       >
         <ToggleGroupItem value="dark">
-          <Moon className="w-4 h-4" />
+          <Moon className="h-4 w-4" />
         </ToggleGroupItem>
         <ToggleGroupItem value="light">
-          <Sun className="w-4 h-4" />
+          <Sun className="h-4 w-4" />
         </ToggleGroupItem>
       </ToggleGroup>
     </>

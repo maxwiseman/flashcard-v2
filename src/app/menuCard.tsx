@@ -1,24 +1,24 @@
-import { Card, CardDescription, CardTitle } from '@/components/ui/card'
-import Link from 'next/link'
-import './cards.css'
+import { Card, CardDescription, CardTitle } from "@/components/ui/card";
+import Link from "next/link";
+import "./cards.css";
 
 export function MenuCard() {
   return (
     <Link
-      href={'/cards/set/123'}
-      className='flex-grow flex-shrink min-w-[580px] max-w-[50%]'
+      href={"/cards/set/123"}
+      className="min-w-[580px] max-w-[50%] flex-shrink flex-grow"
     >
-      <Card className='p-4 flex flex-row flex-nowrap min-w-full gap-6 w-[580px] h-48 min-h-min'>
-        <div className='cardSlot'>
-          <div className='bottomCard' />
-          <div className='middleCard' />
-          <div className='topCard'>Todos los dias</div>
+      <Card className="flex h-48 min-h-min w-[580px] min-w-full flex-row flex-nowrap gap-6 p-4">
+        <div className="cardSlot">
+          <div className="bottomCard" />
+          <div className="middleCard" />
+          <div className="topCard">Todos los dias</div>
         </div>
         <div>
-          <CardTitle className='font-semibold text-lg bg-car'>
+          <CardTitle className="bg-car text-lg font-semibold">
             Spanish Module 1 Vocab
           </CardTitle>
-          <CardDescription className='line-clamp-5'>
+          <CardDescription className="line-clamp-5">
             Cillum adipisicing cupidatat dolor quis ad nisi. Do consectetur aute
             consequat esse nostrud dolor ullamco fugiat. Enim in cupidatat
             cupidatat do reprehenderit duis occaecat proident. Fugiat sint ipsum
@@ -30,5 +30,5 @@ export function MenuCard() {
         </div>
       </Card>
     </Link>
-  )
+  );
 }

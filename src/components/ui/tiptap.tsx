@@ -55,7 +55,7 @@ function MenuBar() {
   return (
     <>
       <div className="p-2">
-        <div className="flex gap-3 p-2 w-full">
+        <div className="flex w-full gap-3 p-2">
           <ToggleGroup
             variant={"outline"}
             type="multiple"
@@ -73,7 +73,7 @@ function MenuBar() {
               aria-label="Toggle bold"
               onClick={() => editor?.chain().focus().toggleBold().run()}
             >
-              <IconBold className="w-4 h-4" />
+              <IconBold className="h-4 w-4" />
             </ToggleGroupItem>
             <ToggleGroupItem
               variant={"outline"}
@@ -82,7 +82,7 @@ function MenuBar() {
               aria-label="Toggle italic"
               onClick={() => editor?.chain().focus().toggleItalic().run()}
             >
-              <IconItalic className="w-4 h-4" />
+              <IconItalic className="h-4 w-4" />
             </ToggleGroupItem>
             <ToggleGroupItem
               variant={"outline"}
@@ -91,7 +91,7 @@ function MenuBar() {
               aria-label="Toggle strikethrough"
               onClick={() => editor?.chain().focus().toggleStrike().run()}
             >
-              <IconStrikethrough className="w-4 h-4" />
+              <IconStrikethrough className="h-4 w-4" />
             </ToggleGroupItem>
             <ToggleGroupItem
               variant={"outline"}
@@ -100,7 +100,7 @@ function MenuBar() {
               aria-label="Toggle underline"
               onClick={() => editor?.chain().focus().toggleUnderline().run()}
             >
-              <IconUnderline className="w-4 h-4" />
+              <IconUnderline className="h-4 w-4" />
             </ToggleGroupItem>
           </ToggleGroup>
 
@@ -111,10 +111,10 @@ function MenuBar() {
               editor.isActive("heading", { level: 1 })
                 ? "H1"
                 : editor.isActive("heading", { level: 2 })
-                ? "H2"
-                : editor.isActive("heading", { level: 3 })
-                ? "H3"
-                : ""
+                  ? "H2"
+                  : editor.isActive("heading", { level: 3 })
+                    ? "H3"
+                    : ""
             }
           >
             <ToggleGroupItem
@@ -126,7 +126,7 @@ function MenuBar() {
                 editor.chain().focus().toggleHeading({ level: 1 }).run()
               }
             >
-              <Heading1 className="w-4 h-4" />
+              <Heading1 className="h-4 w-4" />
             </ToggleGroupItem>
             <ToggleGroupItem
               variant={"outline"}
@@ -137,7 +137,7 @@ function MenuBar() {
                 editor.chain().focus().toggleHeading({ level: 2 }).run()
               }
             >
-              <Heading2 className="w-4 h-4" />
+              <Heading2 className="h-4 w-4" />
             </ToggleGroupItem>
             <ToggleGroupItem
               variant={"outline"}
@@ -148,7 +148,7 @@ function MenuBar() {
                 editor.chain().focus().toggleHeading({ level: 3 }).run()
               }
             >
-              <Heading3 className="w-4 h-4" />
+              <Heading3 className="h-4 w-4" />
             </ToggleGroupItem>
           </ToggleGroup>
 
@@ -171,7 +171,7 @@ function MenuBar() {
               aria-label="Toggle blockquote"
               onClick={() => editor.chain().focus().toggleBlockquote().run()}
             >
-              <IconQuote className="w-4 h-4" />
+              <IconQuote className="h-4 w-4" />
             </ToggleGroupItem>
             <ToggleGroupItem
               variant={"outline"}
@@ -180,7 +180,7 @@ function MenuBar() {
               aria-label="Add horizontal line"
               onClick={() => editor.chain().focus().setHorizontalRule().run()}
             >
-              <IconSeparatorHorizontal className="w-4 h-4" />
+              <IconSeparatorHorizontal className="h-4 w-4" />
             </ToggleGroupItem>
             <ToggleGroupItem
               variant={"outline"}
@@ -189,7 +189,7 @@ function MenuBar() {
               aria-label="Toggle bulleted list"
               onClick={() => editor.chain().focus().toggleBulletList().run()}
             >
-              <List className="w-4 h-4" />
+              <List className="h-4 w-4" />
             </ToggleGroupItem>
             <ToggleGroupItem
               variant={"outline"}
@@ -198,7 +198,7 @@ function MenuBar() {
               aria-label="Toggle ordered list"
               onClick={() => editor.chain().focus().toggleOrderedList().run()}
             >
-              <ListOrderedIcon className="w-4 h-4" />
+              <ListOrderedIcon className="h-4 w-4" />
             </ToggleGroupItem>
             <ToggleGroupItem
               variant={"outline"}
@@ -207,7 +207,7 @@ function MenuBar() {
               aria-label="Toggle checkbox"
               onClick={() => editor.chain().focus().toggleTaskList().run()}
             >
-              <IconCheckbox className="w-4 h-4" />
+              <IconCheckbox className="h-4 w-4" />
             </ToggleGroupItem>
             <ToggleGroupItem
               variant={"outline"}
@@ -216,7 +216,7 @@ function MenuBar() {
               aria-label="Toggle subscript"
               onClick={() => editor.chain().focus().toggleSubscript().run()}
             >
-              <SubscriptIcon className="w-4 h-4" />
+              <SubscriptIcon className="h-4 w-4" />
             </ToggleGroupItem>
             <ToggleGroupItem
               variant={"outline"}
@@ -225,7 +225,7 @@ function MenuBar() {
               aria-label="Toggle superscript"
               onClick={() => editor.chain().focus().toggleSuperscript().run()}
             >
-              <SuperscriptIcon className="w-4 h-4" />
+              <SuperscriptIcon className="h-4 w-4" />
             </ToggleGroupItem>
           </ToggleGroup>
 
@@ -246,7 +246,7 @@ function MenuBar() {
               aria-label="Align left"
               onClick={() => editor.chain().focus().setTextAlign("left").run()}
             >
-              <IconAlignLeft className="w-4 h-4" />
+              <IconAlignLeft className="h-4 w-4" />
             </ToggleGroupItem>
             <ToggleGroupItem
               variant={"outline"}
@@ -257,7 +257,7 @@ function MenuBar() {
                 editor.chain().focus().setTextAlign("center").run()
               }
             >
-              <IconAlignCenter className="w-4 h-4" />
+              <IconAlignCenter className="h-4 w-4" />
             </ToggleGroupItem>
             <ToggleGroupItem
               variant={"outline"}
@@ -268,7 +268,7 @@ function MenuBar() {
                 editor.chain().focus().setTextAlign("justify").run()
               }
             >
-              <IconAlignJustified className="w-4 h-4" />
+              <IconAlignJustified className="h-4 w-4" />
             </ToggleGroupItem>
             <ToggleGroupItem
               variant={"outline"}
@@ -277,7 +277,7 @@ function MenuBar() {
               aria-label="Align right"
               onClick={() => editor.chain().focus().setTextAlign("right").run()}
             >
-              <IconAlignRight className="w-4 h-4" />
+              <IconAlignRight className="h-4 w-4" />
             </ToggleGroupItem>
           </ToggleGroup>
         </div>
