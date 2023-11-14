@@ -27,6 +27,7 @@ import TextAlign from "@tiptap/extension-text-align";
 import TextStyle from "@tiptap/extension-text-style";
 import Typography from "@tiptap/extension-typography";
 import Underline from "@tiptap/extension-underline";
+import Code from "@tiptap/extension-code";
 import {
   EditorProvider,
   EditorProviderProps,
@@ -34,6 +35,7 @@ import {
 } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
 import {
+  CodeIcon,
   Heading1,
   Heading2,
   Heading3,
@@ -162,6 +164,7 @@ function MenuBar() {
               editor.isActive("taskList") ? "Checkbox" : "",
               editor.isActive("superscript") ? "Superscript" : "",
               editor.isActive("subscript") ? "Subscript" : "",
+              editor.isActive("code") ? "Code" : "",
             ]}
           >
             <ToggleGroupItem
@@ -226,6 +229,15 @@ function MenuBar() {
               onClick={() => editor.chain().focus().toggleSuperscript().run()}
             >
               <SuperscriptIcon className="h-4 w-4" />
+            </ToggleGroupItem>
+            <ToggleGroupItem
+              variant={"outline"}
+              value="Code"
+              size={"sm"}
+              aria-label="Toggle code"
+              onClick={() => editor.chain().focus().toggleCode().run()}
+            >
+              <CodeIcon className="h-4 w-4" />
             </ToggleGroupItem>
           </ToggleGroup>
 
@@ -311,6 +323,7 @@ export function TipTap(props: Partial<EditorProviderProps>) {
     TaskList,
     TaskItem,
     TextAlign,
+    Code,
   ];
   const testContent = "<p>Hello, World!</p>";
 

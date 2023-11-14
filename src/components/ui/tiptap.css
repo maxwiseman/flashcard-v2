@@ -48,8 +48,7 @@
   font-size: 0.8rem;
 }
 .tiptap img {
-  max-width: 100%;
-  height: auto;
+  @apply max-w-full h-auto;
 }
 .tiptap blockquote {
   @apply mt-6 border-l-2 pl-6;
